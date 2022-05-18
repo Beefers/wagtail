@@ -1,0 +1,26 @@
+{
+  "name": "wagtail",
+  "version": "1.0.0",
+  "description": "A viewer for MigrationStation backups.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "keywords": [],
+  "author": "Beef",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "typescript": "^4.6.4",
+    "vite": "^2.9.9",
+    "vite-plugin-solid": "^2.2.6",
+    "vite-plugin-windicss": "^1.8.4",
+    "windicss": "^3.5.4"
+  },
+  "dependencies": {
+    "solid-app-router": "^0.3.3",
+    "solid-js": "^1.4.1"
+  }
+}
