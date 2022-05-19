@@ -24,6 +24,9 @@ export default defineConfig({
             "text": "#dcddde",
             "muted": "#a3a6aa",
 
+            // Cards
+            "card": "#20222599",
+
             "accent": "#5865f2",
         }
     },

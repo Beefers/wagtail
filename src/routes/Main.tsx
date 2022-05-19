@@ -15,12 +15,14 @@ export default {
 
         return (
             <div class="flex flex-col justify-center items-center text-center h-full">
-                <h1 class="text-4xl mb-2">Wagtail</h1>
-                <h2 class="text-1xl">A viewer for MigrationStation backups.</h2>
+                <div>
+                    <h1 class="text-4xl mb-2">Wagtail</h1>
+                    <h2 class="text-1xl mb-1">A viewer for MigrationStation backups.</h2>
 
-                <Button onClick={async () => { setBackup(await openFile()); }}>Upload backup</Button>
+                    <Button onClick={async () => { setBackup(await openFile()); }}>Upload backup</Button>
+                </div>
 
-                <div class="flex flex-col overflow-scroll">
+                <div class="flex flex-col overflow-y-auto p-4">
                     {backup().length !== 0 ? JSON.parse(backup().toString()).map((plugin: Plugin) => function() {
                         return (
                             <PluginCard plugin={plugin}/>
