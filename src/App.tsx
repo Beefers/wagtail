@@ -12,7 +12,7 @@ function App() {
 
     return (
         <div class="w-screen h-screen flex flex-row font-medium bg-primary text-text">
-            <div class="h-full w-full p-2">
+            <div class="p-2 w-full h-full overflow-y-auto">
                 <Routes/>
             </div>
         </div>

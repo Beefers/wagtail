@@ -1,5 +1,4 @@
-import { createSignal, Accessor, Setter, createEffect } from "solid-js";
-
+import { createSignal, Accessor, Setter } from "solid-js";
 
 import { BaseRoute, Plugin } from "../def";
 import { openFile } from "../lib/util";
@@ -22,7 +21,7 @@ export default {
                     <Button onClick={async () => { setBackup(await openFile()); }}>Upload backup</Button>
                 </div>
 
-                <div class="flex flex-col overflow-y-auto p-4">
+                <div class="flex flex-col md:w-[50%] <md:w-full p-4 overflow-y-auto">
                     {backup().length !== 0 ? JSON.parse(backup().toString()).map((plugin: Plugin) => function() {
                         return (
                             <PluginCard plugin={plugin}/>

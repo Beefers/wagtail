@@ -28,6 +28,9 @@ export default defineConfig({
             "card": "#20222599",
 
             "accent": "#5865f2",
+            "accent-dimmed": "#4a54c1",
+            "green": "#57F287",
+            "red": "#ED4245",
         }
     },
 })
