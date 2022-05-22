@@ -21,12 +21,12 @@ export default {
                     <Button onClick={async () => { setBackup(await openFile()); }}>Upload backup</Button>
                 </div>
 
-                <div class="flex flex-col md:w-[50%] <md:w-full p-4 overflow-y-auto">
+                <div class="flex flex-col <lg:w-full lg:w-[75%] p-2 overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-tertiary scrollbar-thumb-rounded-full">
                     {backup().length !== 0 ? JSON.parse(backup().toString()).map((plugin: Plugin) => function() {
                         return (
                             <PluginCard plugin={plugin}/>
                         )
-                    }) : null}
+                    }) : null }
                 </div>
             </div>
         );

@@ -1,5 +1,8 @@
 import { defineConfig } from "windicss/helpers";
 
+// @ts-expect-error
+import scrollbarPlugin from "@windicss/plugin-scrollbar";
+
 export default defineConfig({
     theme: {
         extend: {
@@ -27,10 +30,17 @@ export default defineConfig({
             // Cards
             "card": "#20222599",
 
+            // Accents
             "accent": "#5865f2",
             "accent-dimmed": "#4a54c1",
             "green": "#57F287",
             "red": "#ED4245",
-        }
+        },
     },
+    variants: {
+        scrollbar: ["rounded"]
+    },
+    plugins: [
+        scrollbarPlugin,
+    ]
 })

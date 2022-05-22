@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@windicss/plugin-scrollbar': ^1.2.3
   solid-app-router: ^0.3.3
   solid-js: ^1.4.1
   typescript: ^4.6.4
@@ -14,6 +15,7 @@ dependencies:
   solid-js: 1.4.1
 
 devDependencies:
+  '@windicss/plugin-scrollbar': 1.2.3
   typescript: 4.6.4
   vite: 2.9.9
   vite-plugin-solid: 2.2.6
@@ -402,6 +404,10 @@ packages:
       windicss: 3.5.4
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@windicss/plugin-scrollbar/1.2.3:
+    resolution: {integrity: sha512-+cqv1pEmaNPITeBJ/lO6tc8IjBzRhQ+V9G8r249MMXivYoxUO4DtModBrRGHVvBgsYZgPXDsIv2jqtxc4NqYEg==}
     dev: true
 
   /@windicss/plugin-utils/1.8.4:
